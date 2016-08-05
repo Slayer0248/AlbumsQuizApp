@@ -7,11 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "DBAccess.h"
+#import "AlbumsIAPHelper.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [DBAccess copyDatabaseIfNeeded];
+    [AlbumsIAPHelper sharedInstance];
     // Override point for customization after application launch.
     return YES;
 }

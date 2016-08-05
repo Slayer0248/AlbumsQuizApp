@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <sqlite3.h>
 
 @interface AlbumsForiPhone7Tests : XCTestCase
 
